@@ -1,0 +1,20 @@
+-- filepath: /C:/Users/Owner/DatabaseSQL_Lab03/Question2_Lab03.sql
+-- Question: 2 Lab 3
+
+-- [Your SQL query for Question 2]
+SELECT column_name
+FROM table_name
+WHERE condition;
+
+-- 1. Left trim (remove 'MIS' prefix)
+SELECT 
+  LTRIM(course_no, 'MIS') AS trimmed_left
+FROM course
+WHERE course_name LIKE '%Intro%';
+
+-- 2. Right trim (remove '101' suffix)
+SELECT 
+  RTRIM(course_no, '101') AS trimmed_right
+FROM course
+WHERE course_name LIKE '%Intro%';
+

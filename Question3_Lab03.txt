@@ -1,0 +1,7 @@
+-- filepath: /C:/Users/Owner/DatabaseSQL_Lab03/Question3_Lab03.sql
+-- Question: 3 Lab 3    Calculate student ages using date arithmetic.
+SELECT 
+  s_id,
+  s_last,
+  TRUNC((SYSDATE - s_dob)/365.25) AS approximate_age
+FROM student;

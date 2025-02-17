@@ -1,0 +1,14 @@
+-- filepath: /C:/Users/Owner/DatabaseSQL_Lab03/Question1_Lab03.sql
+-- Question: 1 Lab 3
+
+-- Original query (shows date without time)
+SELECT c_sec_id, sec_num, c_sec_day, c_sec_time
+FROM course_section;
+
+-- Formatted time (HH12:MI AM format)
+SELECT 
+c_sec_id,
+sec_num,
+c_sec_day,
+TO_CHAR(c_sec_time, 'HH:MI AM') AS formatted_time
+FROM course_section;

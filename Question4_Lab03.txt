@@ -1,0 +1,7 @@
+ -- filepath: /C:/Users/Owner/DatabaseSQL_Lab03/Question4_Lab03.sql
+-- Question: 4 Lab 3    Format building code with initial capital letter    
+SELECT 
+  INITCAP(LOWER(bldg_code)) AS formatted_code
+FROM location
+WHERE loc_id = 1;
+

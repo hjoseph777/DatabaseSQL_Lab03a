@@ -1,0 +1,6 @@
+-- filepath: /C:/Users/Owner/DatabaseSQL_Lab03/Question7_Lab03.sql
+-- Question: 7 Lab 3    Replace year in term description
+SELECT 
+  REPLACE(term_desc, '2005', '1995') AS modified_desc
+FROM term
+WHERE term_id = 1;

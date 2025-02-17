@@ -1,0 +1,11 @@
+-- filepath: /C:/Users/Owner/DatabaseSQL_Lab03/Question8_Lab03.sql
+-- Question: 8 Lab 3   Extract first 4 characters of term description
+SELECT term_desc
+FROM term
+WHERE term_id = 1;
+
+-- First 4 characters
+SELECT 
+  SUBSTR(term_desc, 1, 4) AS short_desc
+FROM term
+WHERE term_id = 1;

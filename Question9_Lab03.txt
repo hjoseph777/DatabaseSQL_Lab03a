@@ -1,0 +1,14 @@
+-- filepath: /C:/Users/Owner/DatabaseSQL_Lab03a/Question9_Lab03.sql
+-- Question: 9 Lab 3   Convert term description to upper/lower case.
+ -- Uppercase
+SELECT 
+  UPPER(term_desc) AS upper_case
+FROM term
+WHERE term_id = 1;
+
+-- Lowercase
+SELECT 
+  LOWER(term_desc) AS lower_case
+FROM term
+WHERE term_id = 1;
+
